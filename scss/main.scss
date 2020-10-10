@@ -43,6 +43,10 @@ h4 {
     margin: 0 auto 3rem;
     padding: 0 1rem;
 
+    @include media-md {
+      animation: down 1.3s ease-out;
+    }
+
     h2 {
       font-weight: 200;
       font-size: 2rem;
@@ -96,6 +100,10 @@ h4 {
     .card-1 {
       border-top: 4px solid hsl(180, 62%, 55%);
 
+      @include media-md {
+        animation: right 1s ease-out;
+      }
+
       @include media-lg {
         position: absolute;
         top: 20%;
@@ -108,6 +116,10 @@ h4 {
     .card-2 {
       border-top: 4px solid hsl(0, 78%, 62%);
 
+      @include media-md {
+        animation: down 1s ease-out;
+      }
+
       @include media-lg {
         grid-column: 2;
       }
@@ -116,6 +128,10 @@ h4 {
     .card-3 {
       border-top: 4px solid hsl(34, 97%, 64%);
 
+      @include media-md {
+        animation: up 1s ease-out;
+      }
+
       @include media-lg {
         grid-column: 2;
       }
@@ -123,6 +139,10 @@ h4 {
 
     .card-4 {
       border-top: 4px solid hsl(212, 86%, 64%);
+
+      @include media-md {
+        animation: left 1s ease-out;
+      }
 
       @include media-lg {
         position: absolute;
@@ -146,5 +166,49 @@ h4 {
   a {
     font-size: 10px;
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }

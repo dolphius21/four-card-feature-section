@@ -34,6 +34,13 @@ h4 {
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .main .intro {
+    -webkit-animation: down 1.3s ease-out;
+            animation: down 1.3s ease-out;
+  }
+}
+
 .main .intro h2 {
   font-weight: 200;
   font-size: 2rem;
@@ -103,6 +110,13 @@ h4 {
   border-top: 4px solid #45d3d3;
 }
 
+@media screen and (min-width: 768px) {
+  .main .cards .card-1 {
+    -webkit-animation: right 1s ease-out;
+            animation: right 1s ease-out;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main .cards .card-1 {
     position: absolute;
@@ -119,6 +133,13 @@ h4 {
   border-top: 4px solid #ea5353;
 }
 
+@media screen and (min-width: 768px) {
+  .main .cards .card-2 {
+    -webkit-animation: down 1s ease-out;
+            animation: down 1s ease-out;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main .cards .card-2 {
     -ms-grid-column: 2;
@@ -130,6 +151,13 @@ h4 {
   border-top: 4px solid #fcaf4a;
 }
 
+@media screen and (min-width: 768px) {
+  .main .cards .card-3 {
+    -webkit-animation: up 1s ease-out;
+            animation: up 1s ease-out;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main .cards .card-3 {
     -ms-grid-column: 2;
@@ -139,6 +167,13 @@ h4 {
 
 .main .cards .card-4 {
   border-top: 4px solid #549ef2;
+}
+
+@media screen and (min-width: 768px) {
+  .main .cards .card-4 {
+    -webkit-animation: left 1s ease-out;
+            animation: left 1s ease-out;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -165,5 +200,109 @@ h4 {
 .attribution a {
   font-size: 10px;
   color: #3e52a3;
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */
